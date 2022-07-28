@@ -75,7 +75,7 @@ gulp.task('useref', ()=>{
 
 // To Optimizing Images
 gulp.task('images', ()=>{
-    return src('app/img/**/*.+(png|jpg|jpeg|gif|svg)')
+    return src('app/img/**/*.+(png|jpg|jpeg|gif|svg|ico)')
     .pipe(imagemin())
     .pipe(cache(imagemin({
         interlaced: true
